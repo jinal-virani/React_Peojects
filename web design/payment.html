@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>payment</title>
+<link rel="stylesheet" href="payment.css" type="text/css" />
+<script type="text/javascript">
+ function isalphanumeric(ele,helpmes)
+ {
+    var rout=/^[a-zA-Z0-9]+$/;
+	if(ele.value.match(rout))
+	{
+	 return true;
+	 }
+	 else
+	 {
+	   alert(helpmes);
+	   ele.focus();
+	   return false;
+	   }
+	   }
+
+</script>
+
+
+</head>
+<body>
+		 <div class="book">
+		  <h1>PAYMENT</h1>
+		  </div>
+		  <div class="f1">
+			   <div class="f2">
+			     <h3 style="margin-left:100px;">Summary</h3>
+				 
+				 <hr style="border:1px dashed" />
+				 <font><b> ->  </b>There<b style="margin-left:170px;">[-]</b></font>
+				 <p>Train<b style="margin-left:180px;">048A</b></p>
+				 <p>Name<b style="margin-left:90px;">North Express</b></p><br />
+				 <p>8:30a<small style="margin-left:70px;">8:20</small><font style="margin-left:90px;">4:15p</font></p>
+				 <small style="font-size:12px;">Feb 12 MON<big style="margin-left:60px;">-->></big><small style="margin-left:65px; font-size:12px;">Feb 13 TUE</small></small><br /><br /></br>
+				 <font>New York<font style="margin-left:90px;">Los angeles</font></font>
+				 <hr style="border:1px dashed;" />
+				  <font><b> <-  </b>Back<b style="margin-left:170px;">[-]</b></font>
+				 <p>Train<b style="margin-left:180px;">048A</b></p>
+				 <p>Name<b style="margin-left:90px;">North Express</b></p><br />
+				 <p>8:30a<small style="margin-left:70px;">9:10</small><font style="margin-left:90px;">4:15p</font></p>
+				 <small style="font-size:12px;">Feb 12 MON<big style="margin-left:60px;"><<--</big><small style="margin-left:65px; font-size:12px;">Feb 13 TUE</small></small><br /><br /><br />
+				 <font>New York<font style="margin-left:90px;">Los angeles</font></font>
+				 <hr style="border:1px dashed;" />
+				  <font>Passenger<b style="margin-left:170px;">[-]</b></font><br /><br />
+				 <small>1Adult<b style="margin-left:180px;">$260</b></small>
+				 <small>0Children<b style="margin-left:180px;">$0</b></small><br  />
+				 				 <hr style="border:1px dashed;" />
+				  <font>Baggage<b style="margin-left:170px;">[-]</b></font><br /><br />
+				 <small>1Excess<b style="margin-left:180px;">$440</b></small>
+				 <small>0Animals/birds<b style="margin-left:150px;">$0</b></small><br  />
+				  				 <hr style="border:1px dashed;" />
+				 <p style="color:#FF0000;">Total<font style="margin-left:170px;">$404.00</font></p><br /><br />
+				</div>
+           </div>
+		    <div class="f3">
+			      <div class="f4">	
+				  <h3>Your personal information</h3>	
+				  <hr style="border:1px solid" /><br />
+				<form>
+			      <small>First Name</small>
+				  <small style="margin-left:250px;">Last Name</small>
+				  <small style="margin-left:200px;">Birth Date</small>
+	
+				  <input type="text" placeholder="First Name" required="" size="40px;"/>
+				   <input type="text" placeholder="Last Name" size="40px;"/>
+				   <input type="date"  size="50px;"/><br /><br />
+				  
+				  <small>E-mail</small><br />
+				  <input type="mail" placeholder="your email id" size="40px;"  />
+				  <input type="radio" checked="checked" />Male<input type="radio" />Female<br /><br />
+				  
+                   <small>Document Type</small>
+				  <small style="margin-left:200px;">Document number</small>
+				  <small style="margin-left:170px;">Citizenship</small>
+	
+				  <input type="text"  required="" size="40px;"/>
+				   <input type="text" size="40px;"/>
+				   <input type="text"  size="40px;"/><br /><br />
+				  </form>
+                  </div>
+				  </div>		 
+			       <div class="f5">
+			      <div class="f6">	
+				  <h3>Your card information</h3>	
+				  <hr style="border:1px solid;" /><br />
+				<form>
+			      <small>Card number</small>
+				  <small style="margin-left:300px;">Card Holder Name</small><br />
+	
+				  <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required="" id="cardno" size="50px;"/>
+				   <input type="text" placeholder=" Holder Name" size="50px;" /><br /><br />
+				  
+				   <small>Expiration Date</small>
+				  <small style="margin-left:220px;">CVV</small><br />
+	
+				  <input type="text" placeholder="Month" required="" size="20px;"/>
+				   <input type="text"  placeholder="Year" size="20px;"/>
+				   <input type="text"   placeholder="000"size="20px;"/><br /><br />
+				  </form>
+                  </div>
+				  </div>
+				  <div class="f7">
+				    <i style="color:#FF6600;">--></i><b style="color:#FF6600; margin-left:20px;"> Attention! Please read important information!</b>
+					<p style="color:#000000; margin-left:50px;">Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eisumod tempor incididunt ut labore et<br />
+					dolor magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip<br />
+					ex ea commodo consequat.</p> 	
+					<p style="margin-left:20px;"><input type="checkbox" /><font>By continuing,You agree to the<b style="color:#FF6600;">Terms and Conditions</b></font>	</p>
+					<input type="submit" value="BUY TICKETS" onclick="isalphanumeric(document.getElementById('cardno'),'Please enter card number')"/>
+		 
+			      </div>
+
+</body>
+</html>

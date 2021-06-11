@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>login</title>
+<link rel="stylesheet" href="login.css" type="text/css" />
+<script type="text/javascript">
+ function validation()
+ {
+   var usename=document.getElementById('usename');
+   var password=document.getElementById('password');
+    if(isusename(usename,"please enter your name"){
+	if(ispassword(password,"please enter 6 and 7 character"){
+	   return true;
+	   }
+	  }
+	  return false; 
+	
+	}
+    function isusename(ele,helpmes)
+ {
+    var rout=/^[a-zA-Z0-9]+$/;
+	if(ele.value.match(rout))
+	{
+	 return true;
+	 }
+	 else
+	 {
+	   alert(helpmes);
+	   ele.focus();
+	   return false;
+	   }
+	   }
+    function ispassword(ele,helpmes)
+ {
+    var rout=/^[\W\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-Z0-9]{2,4}$/;
+	if(ele.value.match(rout))
+	{
+	 return true;
+	 }
+	 else
+	 {
+	   alert(helpmes);
+	   ele.focus();
+	   return false;
+	   }
+	   }
+
+  </script> 
+
+
+</head>
+
+<body>
+       <div class="login">
+	   <h1>Login Here</h1>
+	    <form onsubmit="return validation()">
+		     <p>User Name</p>
+			 <input type="text" name="" placeholder="Enter Username" id="usename" />
+			 
+		     <p>Password</p>
+			 <input type="password" name="" placeholder="Enter Password" id="password" />
+			 
+			 <input type="submit" name="" value="Login" /><br />
+			 <a href="#">Lost your Password ?"</a><br />
+			 <a href="#">Don't have an account ?</a>
+			 </form>
+	      </div>
+</body>
+</html>

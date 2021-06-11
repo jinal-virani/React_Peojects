@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Home</title>
+</head>
+<link rel="stylesheet" type="text/css" href="train.css" />
+<script type="text/javascript">
+ function isalphbe(ele,helpmes)
+ {
+    var rout=/^[a-zA-Z0-9]+$/;
+	if(ele.value.match(rout))
+	{
+	 return true;
+	 }
+	 else
+	 {
+	   alert(helpmes);
+	   ele.focus();
+	   return false;
+	   }
+	   }
+
+</script>
+
+<body>
+
+<div class="name">
+   <font class="f1" color="#FFFFFF">BOOK YOUR TRAIN</font>
+    <ul class="login" >
+	    <li><a href="#"><b style="color:#FFFFFF;">Sing up</b></a></li>
+		<li><a href="login.html"><b style="color:#FFFFFF;">Log in</b></a></li>
+	 </ul>	
+   </div>
+          <div class="menu1" style="font-weight:bold; letter-spacing:1px;">
+		     <ul>
+			     <li><a href="train.html"><b style="color:#000000;>">HOME</b></a></li>
+				 <li><a href="ticket1.html"><b style="color:#000000;;">TICKETS</b></a></li>
+				  <li><a href="passenger.html"><b style="color:#000000;;">PASSENGERS</b></a></li>
+				   <li><a href="payment.html"><b style="color:#000000;">PAYMENT</b></a></li>
+				   <li><a href="validation.html"><b style="color:#000000;">VALIDATION</b></a></li>
+			
+			</ul> 
+	     </div>	
+		 <img class="image" src="DPPS_25922903.JPG"/>
+		 <div class="f2">
+		   <h1><big>WELCOME TO BOOK</big> YOUR <big>TRAIN</big></h1>
+		   <h3>We saves your time both while purchasing,<br  />the check-in and during the travel.</h3>
+		 </div>
+		 <div class="form2">
+		    <form>
+			      <p>Travelling Route</p>
+				  <input type="text" placeholder="Form"  id="person" required="" />
+				  <input type="text" placeholder="<-->"  />
+				  <input type="text" placeholder="To" required="" /><br /><br />
+				  <p>Travelling Date</p>
+				  <input type="date" placeholder="MM/DD/YY" required="" />
+				  <input type="text" placeholder="one Way"  /><br /><br />
+				  <p>Travelling Persones</p>
+				  <input type="text" placeholder="1 Adult" />
+				  <input type="text" placeholder="0 Kids" required=""  /><br /><br /><br />
+				  <input type="submit" value="SEARCH TICKETS"  onclick="isalphbe(document.getElementById('person'),'searching now railway ticket')"/>
+			</form>
+		</div>		  
+           <div class="footer">
+		     <ul>
+			       <li><b>Menu</b>
+				    <ul>
+				         <li>Travel News</li>
+				         <li>Privacy Policy</li>
+						 <li>About Us</li>
+						 <li>Contacts</li>
+						</ul>
+						</li>
+				     <li><b>Contact Us</b>
+					   <ul>
+					       <li>phone no:+444 5533 8866</li>
+						   <li>email id:ritupatel77@gmail.com</li>
+						   <li>Address:44,lika house<br />puna city<br />46372 99210,US</li>
+						   </ul>
+					</li>
+					 <li><b>Subscribe</b>
+					    <ul>
+				      <li><p>your email id</p></li><br /><br />
+					  <input type="text" placeholder="enter email id" />
+					  </ul>
+				</li>
+		</ul>
+			</div>
+				
+		 
+</body>
+</html>
